@@ -2,7 +2,7 @@
 // Todo esto es CSSelector - utilizamos el metodo GET
 describe("Selectores con CSS Selectors", () => {
 
-    it("selectores", () => {
+    it.only("selectores", () => {
         cy.visit('')
         cy.get('button'); // Elemento web unico encontrado
         cy.get('input') // Encontro 5 elementos web
@@ -15,9 +15,13 @@ describe("Selectores con CSS Selectors", () => {
     // Cypress tambien nos permite localizar rutas de otra formas como por ejemplo: 
     // .find nos permite econtrar un elemento web dentro de otro elemento web.
 
-    it.only("Selectores.find", () => {
+    it("Selectores.find", () => {
         cy.visit('')
         cy.get('fieldset')
-
+        cy.contains('Register')
+        
     })
+
+    // Localizando elementos por .contains nos permite encontrar elementos web atravez de su texto visible
+    // Ej cy.contains('Register')
 })
