@@ -31,7 +31,7 @@ describe("Selectores con CSS Selectors", () => {
         cy.contains('button','Register');
         // cy.contains('')
         // Metodo para relacionar elementos web, lo mas usados: .children / .parent / .siblings
-
+        cy.contains('Hacer las comptras') // cy.contains['Hacer las compras'].sibbling('button').click() 
 
     })
 })
