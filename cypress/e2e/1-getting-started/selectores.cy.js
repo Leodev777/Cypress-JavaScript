@@ -19,9 +19,10 @@ describe("Selectores con CSS Selectors", () => {
         cy.visit('')
         cy.get('fieldset')
         cy.contains('Register')
+        // cy.contains('Register1')
         
     })
 
     // Localizando elementos por .contains nos permite encontrar elementos web atravez de su texto visible
-    // Ej cy.contains('Register')
+    // Ej cy.contains('Register') ... 
 })
