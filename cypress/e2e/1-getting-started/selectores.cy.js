@@ -2,7 +2,7 @@
 // Todo esto es CSSelector - utilizamos el metodo GET
 describe("Selectores con CSS Selectors", () => {
 
-    it.only("selectores", () => {
+    it("selectores", () => {
         cy.visit('')
         cy.get('button'); // Elemento web unico encontrado
         cy.get('input') // Encontro 5 elementos web
@@ -30,6 +30,8 @@ describe("Selectores con CSS Selectors", () => {
         cy.visit('')
         cy.contains('button','Register');
         // cy.contains('')
+        // Metodo para relacionar elementos web, lo mas usados: .children / .parent / .siblings
+
 
     })
 })
