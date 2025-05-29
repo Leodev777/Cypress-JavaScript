@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open --e2e -b electron"
+    "test": "npx cypress open --e2e -b electron",
+    "staging": "npx cypress open --e2e -b electron --config baseUrl=https://pushing-it.vercel.app"
   },
   "keywords": [],
   "author": "",
