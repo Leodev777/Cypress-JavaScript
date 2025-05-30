@@ -12,6 +12,10 @@ describe('Form', () => {
         cy.get('#month').select('October')  // Selecciona el mes de octubre
         cy.get('#year').select('1950')  // Selecciona el año 1950
         cy.get('#submitForm').click();  // Hace clic en el botón para enviar el formulario
+        cy.get('#todolistlink').click()
+        cy.get("[id^='sen']").type("Creamos tarea 1")
+        cy.get('#sendTask').click()
+        cy.contains('Creamos tarea 1').click()
 
     })
 
