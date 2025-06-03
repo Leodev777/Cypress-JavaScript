@@ -1,0 +1,19 @@
+{
+  "usuario": "Leonardo",
+  "password": "Segur@2024",
+  "tareas": {
+    "tarea1": "Preparar desayuno",
+    "tarea2": "Estudiar Cypress",
+    "tarea3": "Leer un libro"
+  },
+  "productos": {
+    "producto1": {
+      "nombre": "Café",
+      "precio": 200
+    },
+    "producto2": {
+      "nombre": "Pan",
+      "precio": 150
+    }
+  }
+}

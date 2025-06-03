@@ -7,12 +7,10 @@ describe("hooks", () => { // Define una suite de pruebas llamada "hooks"
         "user": "Leonardo", // Nombre de usuario para loguearse
         "pass": "Segur@2024" // Contraseña del usuario
        };
-
-       tareas = {
-        'tarea1': "Haces los test", // Primera tarea
-        "tarea2": "Cargar las horas", // Segunda tarea
-        "tarea3": "Terminar el curso" // Tercera tarea
-       };
+        cy.fixture('datos').then((data) => {
+        tareas = data.tareas; // acá extraemos solo las tareas
+    });
+    
     });
 
     beforeEach(() => { // Hook que se ejecuta ANTES de CADA test
