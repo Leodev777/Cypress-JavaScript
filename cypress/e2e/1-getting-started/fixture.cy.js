@@ -18,9 +18,9 @@ describe("hooks", () => {
 
         // Busca el botón con data-cy="removeAll" dentro del body para verificar si existe
         cy.get('body').then(($body) => {
-            if ($body.find('[data-cy="removeAll"]').length) { // Si el botón existe en el DOM
+            if ($body.find('[#removeAll"]').length) { // Si el botón existe en el DOM
                 // Espera hasta 10 segundos a que el botón esté visible y luego hace click para eliminar todo
-                cy.get('[data-cy="removeAll"]', { timeout: 10000 }).should('be.visible').click();
+                cy.get('["#removeAll"]', { timeout: 10000 }).should('be.visible').click();
             } else {
                 // Si no existe, muestra un mensaje en el log y continúa sin fallar el test
                 cy.log('Botón removeAll no encontrado, se omite clic');
