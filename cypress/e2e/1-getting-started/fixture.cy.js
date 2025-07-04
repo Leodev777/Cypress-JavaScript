@@ -29,7 +29,7 @@ describe("hooks", () => {
     });
 
     it.only('Primer test', function () {
-        // Calcula el precio total sumando precio de producto1 y producto2 del fixture
+        // Calcula el precio total sumando precio de producto1 y producto2 del fixtur
         this.data.productos.precioTotal =
             this.data.productos.producto1.precio + this.data.productos.producto2.precio;
         cy.log(`Precio total: ${this.data.productos.precioTotal}`); // Muestra el precio total en la consola de Cypress
